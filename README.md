@@ -5,7 +5,7 @@
 
 
 
-> [Homepage](https://aniicossio1997.github.io/app-kayaker/)
+> [view page](https://aniicossio1997.github.io/app-kayaker/)
 
 
 ```
