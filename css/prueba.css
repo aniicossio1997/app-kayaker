@@ -46,7 +46,6 @@ a
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ccc;
-
   /* box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3); */
 }
 .logo{
@@ -121,8 +120,9 @@ ul.show{
 @media screen and (max-width:952px) {
 
   .menu{
+    background-color: #fafaf5;
+    position: fixed;
     height: 65px;
-    position: relative;
     z-index: 2;
 
   }
@@ -136,16 +136,19 @@ ul.show{
     display: none;
     position: fixed;
     width: 100vw;
-    height: calc(100%-65px);
-    
-    top: -1000vh;
+    height: calc(100%-100px);
+    transition: all 0.35s ease;
+
     text-align: center;
     
     flex-direction: column;
     height: 100%;
     transition: 3s ease-in-out;
+    overflow: scroll;
   }
   .menu_items li{
+    transition: all 0.35s ease;
+
     margin: 30px 0 0 0;
     line-height: 30px;
     display: block;
@@ -180,4 +183,7 @@ ul.show{
     overflow: scroll;
     height: calc(100% - 65px);
   }
+}
+main{
+  padding-top: 3rem;
 }
