@@ -15,22 +15,43 @@
 
 html, body {
   /* IE 10-11 didn't like using min-height */
+
+
   height: 100%;
-
-
   background:#fafafa;
   /* background-color: rgba(224,250,250,250,1); */
 }
 body {
-  font-size: 1em;
-  display: flex;
-  flex-direction: column;
+  
+  font-size: 15px;
+  display: grid;
+  /* grid-template-areas:
+  "header"
+  "main"
+  "footer";*/
+  
+  grid-template-areas:
+  "header"
+  "main" 
+  "footer";
+  grid-template-columns: auto;
+  grid-template-rows: 60px 1fr 150px; 
+  gap: 1em;
+}
+.header{
+  grid-area: header;
+}
+.main{
+grid-area: main;
+}
+.footer{
+  grid-area: footer;
 }
 a
 {
   text-decoration:none;
 }
-.content {
+.main {
   flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
   padding: 1px;
   box-sizing: border-box;
@@ -40,7 +61,7 @@ a
 /** -----------**/
 .menu{
 
-  height: 75px;
+  height: 5.6em;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -50,8 +71,8 @@ a
 }
 .logo{
   color:var(--title-blue);
-  font-size: 2em;
-  padding: 0 80px;
+  font-size: 1.8em;
+  padding: 0 5em;
   font-weight: bold;
 }
 .menu_items{
@@ -60,70 +81,69 @@ a
   align-items:center;
   justify-content	:center;
   list-style: none;
-  margin-right: 2em;
+  margin-right: 1em;
 
 }
 .menu_items li{
   border-radius:3px;
-  margin: 0 5px;
-  border-bottom: 3px solid transparent;
+  margin: 0 0.33em;
+  border-bottom: 0.2em solid transparent;
   box-sizing: border-box;
 }
 .btn_menu{
-  margin-right: 30px;
-  font-size: 25px;
+  margin-right: 2em;
+  font-size: 1.66em;
   cursor: pointer;
   display: none;
 
 }
 .menu_items > li > a{
-  padding: 7px 13px;
+  padding: 0.4em 0.8em;
   text-decoration: none;
   font-size: 1.3em;
   display: inline-block;
   text-transform: uppercase;
-  letter-spacing: 1.4px;
+  letter-spacing: 0.093em;
   color: var(--title-blue);
   border-radius:3px;
   border-bottom: 3px solid transparent;
   box-sizing: border-box;
 }
 
-.menu_items > li:hover{
+.menu_items > li:hover,  a.active{
   border-bottom: 3px solid #494747;
-    transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
- li:hover::after a.active,  li:hover:before.active,  li:hover:focus.active {
+ /* li:hover::after,  li:hover:before.active,  li:hover:focus.active {
   border-bottom: 3px solid #494747;
   border-top: 3px solid #494747;
 
-}
+} */
 
 ul.show{
-  top: 65px;
+  top: 4.33em;
   display: block;
   transition: all .3s;
   transition: linear;
 
 }
-@media screen and (max-width:1200px) {
-
-  .menu_items > li > a{
-    font-size: 1em;
-  }
-  .logo{
-    font-size: 25px;
-    padding-left: 15px;
+@media screen and (max-width:1350px) {
+  body{
+    font-size: 12px;
   }
 }
 
-@media screen and (max-width:952px) {
+@media screen and (max-width:1010px) {
+
 
   .menu{
     background-color: #fafaf5;
     position: fixed;
-    height: 65px;
+    height: 4.33em;
     z-index: 2;
+    left: 0;
+    right: 0;
+    top: 0;
 
   }
   .btn_menu{
@@ -147,10 +167,10 @@ ul.show{
     overflow: scroll;
   }
   .menu_items li{
-    transition: all 0.35s ease;
+    transition: none;
 
-    margin: 30px 0 0 0;
-    line-height: 30px;
+    margin: 2em 0 0 0;
+    line-height: 2em;
     display: block;
   }
   .menu_items li a:hover{
@@ -158,7 +178,7 @@ ul.show{
     color: black;
   }
   .menu_items li a{
-    font-size: 20px;
+    font-size: 1.5em;
     color: #fff;
     font-weight: bold;
     display: block;
@@ -168,14 +188,17 @@ ul.show{
     color: #e9183b;
   }*/
   .logo{
-    font-size: 25px;
-    padding-left: 35px;
+    font-size: 1.66em;
+    padding-left: 2.33em;
   }
   .menu_items > li:hover{
     border-bottom: 3px solid transparent;
 }
 }
 @media screen and (max-width: 858px) and (orientation: landscape){
+  body{
+    font-size: 12px;
+  }
   .menu_items li{
     margin: 5px 0 0 0;
   }
@@ -183,7 +206,4 @@ ul.show{
     overflow: scroll;
     height: calc(100% - 65px);
   }
-}
-main{
-  padding-top: 3rem;
 }
