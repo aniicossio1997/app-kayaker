@@ -1,0 +1,9 @@
+.card-animation{animation-duration: 1s;
+animation-fill-mode: both;
+animation-iteration-count: 1;
+cursor: pointer;
+}
+
+.card-animation:hover {
+animation-name: rubberBand;
+}

@@ -2,7 +2,9 @@
 
   let contentHeader = `
   <nav class="menu">
-  <span class="logo">LOGO</span>
+  <a href="index.html">
+  <span class="logo"> 【YaKer】</span>
+  </a>
   <span class="btn_menu">
     <i class="fas fa-bars"></i>
   </span>
@@ -45,17 +47,17 @@
   <div>
     <ul class="social-icons">
       <li>
-        <a class="facebook" href="#">
+        <a class="facebook" href="https://www.facebook.com/" target="_blank">
           <i class="fab fa-facebook-f"></i>
         </a>
       </li>
       <li>
-        <a class="instagram" href="#">
+        <a class="instagram" href="https://www.instagram.com/" target="_blank">
           <i class="fab fa-instagram"></i>
         </a>
       </li>
       <li>
-        <a class="twitter" href="#">
+        <a class="twitter" href="http://twitter.com/" target="_blank">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
