@@ -13,85 +13,104 @@
 
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/gallery.css" />
-    <script src="js/app.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/contacto.css">
+
+
+
+    <style>
+
+
+input[type=submit] {
+  width: 100%;
+  background-color:#0ec2cc;
+  color: white;
+  font-weight: bold;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #23d5df;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+textarea{
+  resize: none;
+}
+
+    </style>
   </head>
 
   <body>
-    <header class="header">
-      <nav class="menu">
-        <span class="logo"></span>
-        <ul class="menu_items">
-          <li>
-            <a href="index.html" class="btn_link active"
-              ><i class="fas fa-home"></i> home</a
-            >
-          </li>
-          <li>
-            <a href="gallery.html" class="btn_link"
-              ><i class="far fa-image"></i> Galeria</a
-            >
-          </li>
-          <li>
-            <a href="servicios.html" class="btn_link"
-              ><i class="fas fa-globe"></i> Servicio</a
-            >
-          </li>
+    <header id="idHeader" class="header header-nav"></header>
 
-          <li>
-            <a href="descuentos.html" class="btn_link"
-              ><i class="fas fa-tag"></i> descuentos</a
-            >
-          </li>
-          <li>
-            <a href="contacto.html" class="btn_link"
-              ><i class="fas fa-envelope"></i> Contacto</a
-            >
-          </li>
-        </ul>
-        <span class="btn_menu">
-          <i class="fas fa-bars"></i>
-        </span>
-      </nav>
-    </header>
-    <div class="home content">
-      <main class="main">
-        <section class="gallery">
-          <header class="home-grid-container">
-            <div class="gallery-title">
-              <h1 class="home-title">Contacto</h1>
-            </div>
-          </header>
+    <main class="main">
+      <section class="gallery">
+        <header class="home-grid-container">
+          <img
+            src="img/method.svg"
+            alt="icon-sub header"
+            class="icon-gallery"
+          />
+          <h1 class="home-title type-title">contacto</h1>
+        </header>
+        <div class="grid-contacto">
+          <div class="hijo-map ">
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6543.458879675149!2d-57.94451313751219!3d-34.913238726620975!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e63bb68ffc77%3A0x3596d99d75e6ed52!2sHouse%20Government%20of%20the%20Province%20of%20Buenos%20Aires!5e0!3m2!1sen!2sus!4v1621495502726!5m2!1sen!2sus"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            class="frame-map"
+          ></iframe>
 
-          <div class="gallery-grid-container"></div>
-        </section>
-      </main>
-    </div>
+          </div>
+          <div class="hijo-form">
 
-    <footer class="footer site-footer">
-      <div>
-        <p class="footer-text">
-          Dolore quisquam nisi voluptate eveniet omnis cupiditate laboriosam
-        </p>
-      </div>
-      <div>
-        <ul class="social-icons">
-          <li>
-            <a class="facebook" href="#">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li>
-            <a class="instagram" href="#">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a class="twitter" href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
+            <form action="/action_page.php">
+             
+              <label for="fname">Nombre</label>
+              <input type="text" id="fname" name="firstname" placeholder=".." required>
+ 
+              <label for="lname">Apellido</label>
+              <input type="text" id="lname" name="lastname" placeholder=".." required>
+ 
+              <label for="email">Telefono/Celular</label><span>*opcional</span>
+              <input type="number" id="phone" name="lastname" placeholder="..">
+   
+              <label for="email">Email</label>
+              <input type="email" id="email" name="lastname" placeholder=".." required>
+      
+              <label for="comentario">Comentario</label>
+             <textarea name="comentario" id="comentario"></textarea>
+            
+              <input type="submit" value="Submit">
+            </form>
+
+          </div>  
+        </div>
+      </section>
+    </main>
+
+    <footer id="idFooter" class="footer site-footer"></footer>
+
+    <script src="js/index.js" defer></script>
   </body>
 </html>

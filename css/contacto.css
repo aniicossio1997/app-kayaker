@@ -1,0 +1,45 @@
+.frame-map{
+  object-fit: cover;
+  width: 100%;
+  height: 30em;
+  border: 3px solid #000;
+}
+.grid-contacto{
+  box-sizing: border-box;
+
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-height: 100%;
+
+
+  grid-template-areas: "map form";
+
+  grid-template-rows: 1fr; 
+  gap: 10px;
+}
+
+.hijo-form{
+  background-color: #f2f2f2;
+
+  grid-area: form;
+  box-sizing: border-box;
+
+}
+.hijo-map{
+  grid-area: map;
+  
+}
+.grid-contacto > *{
+  padding: 20px 20px;
+}
+
+@media screen and (max-width:857px) {
+  .grid-contacto{  
+    grid-template-areas: "form form"
+                        "map map" ;
+
+  }
+
+}

@@ -9,8 +9,7 @@
   margin: 0;
   outline:0;
   box-sizing: border-box;
-  font-family: 'Roboto Light', roboto;
-
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 html, body {
@@ -207,3 +206,4 @@ ul.show{
     height: calc(100% - 65px);
   }
 }
+

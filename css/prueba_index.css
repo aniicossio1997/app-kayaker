@@ -29,10 +29,11 @@ img {
 .home-title {
   font-size: 1.3em;
   color:  #0ec2cc;
+  font-weight: 900;
   text-transform: uppercase;
 }
 .home-body {
-  color: #6b6969;
+  color: #2e2d2d;
   font-size: 0.8em;
   line-height: 1.5em;
   letter-spacing: 1.2px;
@@ -44,6 +45,7 @@ img {
     font-size: 25px;
     line-height: 1.8em;
   }
+}
 @media screen and (max-width: 938px) {
   .home_content_text {
 
@@ -60,4 +62,3 @@ img {
     margin-top: 5%;
   }
 }
-

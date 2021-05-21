@@ -55,16 +55,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
   color: #fff;
 }
 .footer-text{
-  color: #646363;
+  color: #292828;
   line-height: 2em;
   letter-spacing: 1px;
-  font-size: 1em;
+  font-size: 1.2em;
 
 }
-@media screen and (max-width: 450px){
-  .footer-text{
+@media screen and (max-width: 550px){
+  .footer{
+    flex-direction: row;
 
-    font-size: 0.8em;
+  }
+  .footer-text{
+    padding-top: 5px;
+    font-size: 0.9em;
     
   }
 

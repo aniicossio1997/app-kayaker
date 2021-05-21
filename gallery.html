@@ -13,108 +13,55 @@
 
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/gallery.css" />
-    <script src="js/app.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+
   </head>
 
   <body>
-    <header class="header">
+    <header id="idHeader" class="header header-nav"></header>
 
-      <nav class="menu">
-        <span class="logo"></span>
-        <ul class="menu_items">
-          <li>
-            <a href="index.html" class="btn_link active"
-              ><i class="fas fa-home"></i> home</a
-            >
-          </li>
-          <li>
-            <a href="gallery.html" class="btn_link"
-              ><i class="far fa-image"></i> Galeria</a
-            >
-          </li>
-          <li>
-            <a href="servicios.html" class="btn_link"
-              ><i class="fas fa-globe"></i> Servicio</a
-            >
-          </li>
+    <main class="main">
+      <section class="gallery">
+        <header class="home-grid-container">
+          <img
+            src="img/method.svg"
+            alt="icon-sub header"
+            class="icon-gallery"
+          />
+          <h1 class="home-title type-title">Galeria</h1>
+        </header>
 
-          <li>
-            <a href="descuentos.html" class="btn_link"
-              ><i class="fas fa-tag"></i> descuentos</a
-            >
-          </li>
-          <li>
-            <a href="contacto.html" class="btn_link"
-              ><i class="fas fa-envelope"></i> Contacto</a
-            >
-          </li>
-        </ul>
-        <span class="btn_menu">
-          <i class="fas fa-bars"></i>
-        </span>
-      </nav>
-
-    </header>
-    <div class="home content">
-      <main class="main">
-        <section class="gallery">
-          <header class="home-grid-container">
-            <div class="gallery-title">
-              <img src="img/method.svg" alt="icon-sub header" class="icon-gallery">
-              <h1 class="home-title">Galeria</h1>
-            </div>
-          </header>
-
-          <div class="gallery-grid-container">
-            <div class="gallery-item tall">
-              <img src="img/h9.jpg" alt="foto de galeria" class="gallery-img" />
-            </div>
-            <div class="gallery-item wide">
-              <img src="img/h1.jpg" alt="foto de galeria" class="gallery-img" />
-            </div>
-            <div class="gallery-item">
-              <img src="img/h2.jpg" alt="" class="gallery-img" />
-            </div>
-
-            <div class="gallery-item tall change-tall-2">
-              <img src="img/h15.jpg" alt="" class="gallery-img" />
-            </div>
-            <div class="gallery-item">
-              <img src="img/h16.jpg" alt="" class="gallery-img" />
-            </div>
-            <div class="gallery-item">
-              <img src="img/h21.jpg" alt="" class="gallery-img" />
-            </div>
+        <div id="app" class="gallery-grid-container">
+          
+          <div class="gallery-item tall">
+            <img src="img/h9.jpg" alt="foto de galeria" class="gallery-img" />
           </div>
-        </section>
-      </main>
-    </div>
+          <div class="gallery-item wide">
+            <img src="img/h1.jpg" alt="foto de galeria" class="gallery-img" />
+          </div>
+          <div class="gallery-item">
+            <img src="img/h2.jpg" alt="" class="gallery-img" />
+          </div>
 
-    <footer class="footer site-footer">
-      <div>
-        <p class="footer-text">
-          Dolore quisquam nisi voluptate eveniet omnis cupiditate laboriosam
-        </p>
-      </div>
-      <div>
-        <ul class="social-icons">
-          <li>
-            <a class="facebook" href="#">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li>
-            <a class="instagram" href="#">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a class="twitter" href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
+          <div class="gallery-item tall change-tall-2">
+            <img src="img/h15.jpg" alt="" class="gallery-img" />
+          </div>
+          <div class="gallery-item">
+            <img src="img/h16.jpg" alt="" class="gallery-img" />
+          </div>
+          <div class="gallery-item">
+            <img src="img/h21.jpg" alt="" class="gallery-img" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="idFooter" class="footer site-footer"></footer>
+
+    <script src="js/index.js" defer></script>
+
+ 
   </body>
 </html>
